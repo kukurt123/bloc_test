@@ -7,6 +7,8 @@ abstract class CounterEvent {
   List<Object> get props => [];
 }
 
-class CounterDecrement extends CounterEvent {}
+class CounterDecrementEvent extends CounterEvent {}
 
-class CounterIncrement extends CounterEvent {}
+class CounterIncrementEvent extends CounterEvent {}
+
+class CounterPreLoadEvent extends CounterEvent {}

@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:testing_p/bloc/count/counter_bloc.dart';
 import 'package:testing_p/bloc/name/count/name_bloc.dart';
 import 'package:testing_p/view/second_page/second_page.dart';
-import 'bloc/count/counter_bloc.dart';
 
 void main() {
   runApp(MultiBlocProvider(providers: [
@@ -29,6 +28,7 @@ class _MyAppState extends State<MyApp> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
+                Text('testsetst'),
                 Expanded(
                   child: Padding(
                     padding: EdgeInsets.symmetric(vertical: 100),

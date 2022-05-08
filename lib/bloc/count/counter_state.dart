@@ -7,14 +7,31 @@ class CounterState {
   List<Object> get props => [];
 }
 
-class initialState extends CounterState {}
-
-class incrementState extends CounterState {
+class CounterInitialState extends CounterState {
   final int count;
 
-  const incrementState({required this.count});
+  const CounterInitialState({required this.count});
+
+  @override
+  List<Object> get props => [count];
 }
 
-class decrementState extends CounterState {}
+class CounterIncrementState extends CounterState {
+  final int count;
 
-class errorState extends CounterState {}
+  const CounterIncrementState({required this.count});
+
+  @override
+  List<Object> get props => [count];
+}
+
+class CounterDecrementState extends CounterState {
+  final int count;
+
+  const CounterDecrementState({required this.count});
+
+  @override
+  List<Object> get props => [count];
+}
+
+class ErrorState extends CounterState {}
